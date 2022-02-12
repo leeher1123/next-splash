@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
-const Main = () => (
+const Header = () => (
   <Container>
-    Main
+    index
   </Container>
 );
 
@@ -10,4 +10,4 @@ const Container = styled.div`
 
 `;
 
-export default Main;
+export default Header;
