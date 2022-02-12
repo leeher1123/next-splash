@@ -1,8 +1,9 @@
+import React from 'react';
 import styled from 'styled-components';
 
-const Home = () => (
+const Search = () => (
   <Container>
-    Home
+    Search 페이지입니다.
   </Container>
 );
 
@@ -10,4 +11,4 @@ const Container = styled.div`
 
 `;
 
-export default Home;
+export default Search;
