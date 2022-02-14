@@ -1,34 +1,31 @@
 import styled from 'styled-components';
 
+import { useRouter } from 'next/router';
+
 import SearchBox from '../searchBox';
 
-const Header = () => (
-  <Container>
-    <Logo>뮤직큐</Logo>
-    <SearchBox />
-    <Nav>Nav</Nav>
-  </Container>
-);
+const Header = () => {
+  const { pathname } = useRouter();
+  const isSearch = pathname.startsWith('/photos');
+  return (
+    <Container>
+      {
+        isSearch && <SearchBox />
+      }
+    </Container>
+  );
+};
 
 const Container = styled.div`
+  display: flex;
+  align-items: center;
   position: fixed;
   top: 0;
-  left: 0;
+  left: 240px;
   right: 0;
   height: 64px;
-  background-color: #101010;
-`;
-
-const Logo = styled.div`
-
-`;
-
-const Nav = styled.div`
-
-`;
-
-const NavLink = styled.div`
-
+  background-color: #070707;
+  padding: 0 30px;
 `;
 
 export default Header;

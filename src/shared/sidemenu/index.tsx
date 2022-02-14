@@ -3,12 +3,12 @@ import styled from 'styled-components';
 
 const SideMenu = () => (
   <Container>
-    <h1>뮤직큐</h1>
+    <h1>splash</h1>
     <Link href="/">
       <NavLink>홈</NavLink>
     </Link>
-    <Link href="/search">
-      <NavLink>검색하기</NavLink>
+    <Link href="/photos">
+      <NavLink>사진 검색하기</NavLink>
     </Link>
   </Container>
 );
@@ -19,8 +19,9 @@ const Container = styled.div`
   left: 0;
   bottom: 0;
   width: 240px;
-  background: #111;
+  background: #070707;
   color: #fff;
+  padding-bottom: 76px;
   h1 {
     font-size: 22px;
     text-align: center;
